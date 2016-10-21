@@ -1,0 +1,203 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <chatapp.tung.tuff.com.tungapp.util.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center|right"
+                android:layout_weight="8"
+                android:gravity="center|right"
+                android:paddingRight="16dp"
+                android:text="x"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#583C87"
+                android:textSize="25sp"
+                geekui:customTypeface="fonts/Montserrat-Bold.otf" />
+
+            <chatapp.tung.tuff.com.tungapp.util.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="SIGN UP"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#583C87"
+                geekui:customTypeface="fonts/Montserrat-Black.otf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"></LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/met_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:hint="Username"
+                    app:met_baseColor="#583C87"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#583C87"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="#583C87"
+                    app:met_textColorHint="#583C87"
+                    app:met_underlineColor="#583C87" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"></LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/met_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    app:met_baseColor="#583C87"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#583C87"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="#583C87"
+                    app:met_textColorHint="#583C87"
+                    app:met_underlineColor="#583C87" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"></LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/met_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    app:met_baseColor="#583C87"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#583C87"
+                    app:met_singleLineEllipsis="true"
+                    app:met_textColor="#583C87"
+                    app:met_textColorHint="#583C87"
+                    app:met_underlineColor="#583C87" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"></LinearLayout>
+
+                <chatapp.tung.tuff.com.tungapp.util.TypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="80"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="By registering, I agree with the following terms of use."
+                    android:textColor="#583C87"
+                    geekui:customTypeface="fonts/Montserrat-Regular.otf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"></LinearLayout>
+
+                <chatapp.tung.tuff.com.tungapp.util.TypefaceTextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:background="@drawable/sign_in_btn"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="G0"
+                    geekui:customTypeface="fonts/Montserrat-Light.otf"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

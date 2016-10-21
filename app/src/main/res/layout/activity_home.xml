@@ -1,0 +1,44 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:background="#ffffff">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <chatapp.tung.tuff.com.tungapp.util.TypefaceTextView
+                android:id="@+id/tabName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="Discover"
+                android:background="#583C87"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                geekui:customTypeface="fonts/Montserrat-Light.otf"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_marginTop="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </TabHost>
+
+</android.support.design.widget.CoordinatorLayout>
